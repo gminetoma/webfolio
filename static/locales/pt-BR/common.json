@@ -1,0 +1,66 @@
+{
+  "aboutMe": {
+    "header": "Sobre mim",
+    "text": "<h2>Oi! Meu nome é Gustavo Minetoma</h2> <p>Sou um <strong>Engenheiro Full-Stack</strong> baseado em <em>Kanagawa, Japão</em>. Nasci no Japão e me mudei para o Brasil quando tinha três anos. Minha paixão por tecnologia começou quando joguei <strong>Tibia</strong> pela primeira vez, muitos anos atrás. Acompanhei o crescimento da indústria de games, especialmente de uma empresa: <strong>Steam</strong>.</p> <p>Aos 14 anos, comecei minha carreira com um <strong>curso técnico em TI</strong>, seguido por um ano de serviço obrigatório no exército. Depois disso, cursei <strong>Análise e Desenvolvimento de Sistemas</strong> em uma faculdade pública. Após me formar, voltei para o Japão para me tornar financeiramente independente e economizar para continuar minha carreira em tecnologia.</p> <p>Atualmente, sou <strong>Assistente de Ensino na Code Chrysalis</strong>, onde compartilho meu conhecimento e experiência com os alunos. Meu objetivo é me tornar um <strong>Engenheiro Full-Stack</strong> e ajudar desenvolvedores brasileiros a construírem uma vida melhor.</p>",
+    "whyHusky": "Por que um husky?"
+  },
+  "card": {
+    "btnViewLess": "Ver menos",
+    "btnViewMore": "Veja mais",
+    "visitApp": "Visite aplicativo"
+  },
+  "contact": {
+    "fail": "Desculpe! Algo deu errado, mas você ainda pode entrar em contato comigo via LinkedIn.",
+    "form": {
+      "email": "E-mail",
+      "error": {
+        "email": "O email é necessário",
+        "message": "Mensagem é necessária",
+        "name": "O nome é necessário"
+      },
+      "message": "Mensagem",
+      "name": "Nome",
+      "submit": "Enviar"
+    },
+    "header": "Contato",
+    "myLinkedInProfile": "Meu perfil do LinkedIn",
+    "success": "Obrigado! Entrarei em contato em breve."
+  },
+  "footer": {
+    "madeWithLove": "Feito com amor usando:"
+  },
+  "form": {
+    "error": {
+      "invalidEmail": "Email inválido",
+      "required": "Obrigatório"
+    }
+  },
+  "header": {
+    "aboutMe": "Sobre mim",
+    "contact": "Contato",
+    "portfolio": "Portfólio"
+  },
+  "index": {
+    "btnViewPortfolio": "Exibir portfólio",
+    "fullStackEngineer": "Full-Stack Engineer",
+    "hey": "Olá! Meu nome é",
+    "name": "Gustavo Minetoma",
+    "portfolio": "Portfólio"
+  },
+  "menu": {
+    "aboutMe": "Sobre mim",
+    "contact": "Contato",
+    "portfolio": "Portfólio"
+  },
+  "portfolio": {
+    "findADoc": {
+      "description": "A Find a Doc, o Japão, é uma organização sem fins lucrativos que fornece informações gratuitas e multilíngues de saúde para promover cuidados de saúde inclusivos.",
+      "jobTitle": "Engenheiro front-end"
+    },
+    "header": "Portfólio",
+    "vitaeAggregate": {
+      "description": "Um construtor de currículos com um forte foco na interação da comunidade, projetada para apoiar o anonimato do usuário e promover o feedback colaborativo.",
+      "jobTitle": "Full-Stack Engineer"
+    }
+  }
+}

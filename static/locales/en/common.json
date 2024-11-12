@@ -1,0 +1,66 @@
+{
+  "index": {
+    "hey": "Hi There! My name is",
+    "fullStackEngineer": "Full-Stack Engineer",
+    "name": "Gustavo Minetoma",
+    "btnViewPortfolio": "View Portfolio",
+    "portfolio": "Portfolio"
+  },
+  "portfolio": {
+    "header": "Portfolio",
+    "vitaeAggregate": {
+      "description": "A resume builder with a strong focus on community interaction, designed to support user anonymity and promote collaborative feedback.",
+      "jobTitle": "Full-Stack Engineer"
+    },
+    "findADoc": {
+      "description": "Find a Doc, Japan, is a non-profit providing free, multilingual health information to promote inclusive healthcare.",
+      "jobTitle": "Front-End Engineer"
+    }
+  },
+  "card": {
+    "btnViewMore": "View More",
+    "visitApp": "Visit App",
+    "btnViewLess": "View Less"
+  },
+  "footer": {
+    "madeWithLove": "Made with Love using:"
+  },
+  "menu": {
+    "portfolio": "Portfolio",
+    "aboutMe": "About Me",
+    "contact": "Contact"
+  },
+  "aboutMe": {
+    "text": "<h2>Hi there! My name is Gustavo Minetoma</h2><p>I'm a <strong>Full-Stack Engineer</strong> based in <em>Kanagawa, Japan</em>. I was born in Japan and moved to Brazil when I was three. My passion for tech began when I first played <strong>Tibia</strong> many years ago. I watched the gaming industry grow, especially one company: <strong>Steam</strong>.</p><p>At 14, I began my career with a <strong>technical course in IT</strong>, followed by a year of mandatory service in the army. After that, I pursued a degree in <strong>System Analysis and Development</strong> at a public college. Once I graduated, I returned to Japan to become financially independent and save funds to continue my tech career.</p><p>Today, I'm a <strong>Teaching Assistant at Code Chrysalis</strong>, where I share my knowledge and experience with students. My goal is to become a <strong>Full-Stack Engineer</strong> and help Brazilian developers build better lives.</p>",
+    "header": "About Me",
+    "whyHusky": "Why a Husky?"
+  },
+  "contact": {
+    "header": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit",
+      "error": {
+        "name": "Name is required",
+        "email": "Email is required",
+        "message": "Message is required"
+      }
+    },
+    "success": "Thank you! I'll be in touch shortly.",
+    "fail": "Sorry! Something went wrong, but you can still contact me via LinkedIn.",
+    "myLinkedInProfile": "My LinkedIn Profile"
+  },
+  "header": {
+    "portfolio": "Portfolio",
+    "aboutMe": "About Me",
+    "contact": "Contact"
+  },
+  "form": {
+    "error": {
+      "required": "Required",
+      "invalidEmail": "Invalid Email"
+    }
+  }
+}
