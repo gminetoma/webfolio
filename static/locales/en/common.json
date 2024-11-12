@@ -1,0 +1,30 @@
+{
+  "index": {
+    "hey": "Hi There! My name is",
+    "fullStackEngineer": "Full-Stack Engineer",
+    "name": "Gustavo Minetoma",
+    "btnViewPortfolio": "View Portfolio",
+    "portfolio": "Portfolio"
+  },
+  "portfolio": {
+    "header": "Portfolio",
+    "vitaeAggregate": {
+      "description": "A resume builder with a strong focus on community interaction, designed to support user anonymity and promote collaborative feedback."
+    },
+    "findADoc": {
+      "description": "Find a Doc, Japan, is a non-profit providing free, multilingual health information to promote inclusive healthcare."
+    }
+  },
+  "card": {
+    "btnViewMore": "View More",
+    "visitApp": "Visit App"
+  },
+  "footer": {
+    "madeWithLove": "Made with Love using:"
+  },
+  "menu": {
+    "portfolio": "Portfolio",
+    "aboutMe": "About Me",
+    "contact": "Contact"
+  }
+}

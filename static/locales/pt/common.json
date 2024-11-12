@@ -1,0 +1,30 @@
+{
+  "index": {
+    "fullStackEngineer": "Engenheiro Full-Stack",
+    "hey": "Olá! Meu nome é",
+    "name": "Gustavo Minetoma",
+    "btnViewPortfolio": "Ver Portfólio",
+    "portfolio": "Portfólio"
+  },
+  "portfolio": {
+    "header": "Portfólio",
+    "findADoc": {
+      "description": "Find a Doc, Japão, é uma organização sem fins lucrativos que fornece informações de saúde gratuitas e multilíngues para promover cuidados de saúde inclusivos."
+    },
+    "vitaeAggregate": {
+      "description": "Um criador de currículos com forte foco na interação com a comunidade, projetado para apoiar o anonimato do usuário e promover feedback colaborativo."
+    }
+  },
+  "card": {
+    "btnViewMore": "Ver mais",
+    "visitApp": "Visite o aplicativo"
+  },
+  "footer": {
+    "madeWithLove": "Feito com amor usando:"
+  },
+  "menu": {
+    "aboutMe": "Sobre mim",
+    "contact": "Contato",
+    "portfolio": "Portfólio"
+  }
+}
