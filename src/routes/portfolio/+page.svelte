@@ -21,11 +21,14 @@
         titleFlyParams: { duration: 500 },
         imagePath: '/images/portfolio/find-a-doc.png',
         imageAlt: 'Find a Doc Landing Page',
-        description: $i18n.t('portfolio.findADoc.description'),
+        jobTitleI18nKey: 'portfolio.findADoc.jobTitle',
+        techStack: 'TypeScript | Nuxt 3 | Vue 3 | Pinia | Cypress | Yarn',
+        descriptionI18nKey: 'portfolio.findADoc.description',
         descriptionFlyParams: { duration: 500, y: 100, delay: 250 },
         borderColor: 'border-orange-500',
         descriptionColor: 'from-purple-500 to-orange-500',
-        appLink: 'https://www.findadoc.jp/'
+        appLink: 'https://www.findadoc.jp/',
+        gitHubLink: 'https://github.com/ourjapanlife/findadoc-web'
       },
       {
         title: 'Vitae Aggregate',
@@ -33,18 +36,22 @@
         imagePath: '/images/portfolio/vitae-aggregate.png',
         imageAlt: 'Find a Doc Landing Page',
         cardFlyParams: { duration: 500, y: 200, delay: 500 },
-        description: $i18n.t('portfolio.vitaeAggregate.description'),
+        jobTitleI18nKey: 'portfolio.vitaeAggregate.jobTitle',
+        techStack:
+          'TypeScript | SvelteKit | Vercel | Python | Django Rest Framework | PostgreSQL | Heroku | npm',
+        descriptionI18nKey: 'portfolio.vitaeAggregate.description',
         descriptionFlyParams: { duration: 500, y: 100, delay: 750 },
         descriptionColor: 'from-yellow-500 to-green-500',
         borderColor: 'border-yellow-500',
-        appLink: 'https://www.vitaeaggregate.pro/'
+        appLink: 'https://www.vitaeaggregate.pro/',
+        gitHubLink: 'https://github.com/vitaeaggregate'
       }
     ];
   };
 </script>
 
 <section class="flex-grow">
-  <div class="container flex flex-col gap-5">
+  <div class="container flex flex-col gap-5 p-5">
     {#if isReady && !$isLoading}
       <h2 class="text-center text-4xl">
         {$i18n.t('portfolio.header')}

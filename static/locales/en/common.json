@@ -9,15 +9,18 @@
   "portfolio": {
     "header": "Portfolio",
     "vitaeAggregate": {
-      "description": "A resume builder with a strong focus on community interaction, designed to support user anonymity and promote collaborative feedback."
+      "description": "A resume builder with a strong focus on community interaction, designed to support user anonymity and promote collaborative feedback.",
+      "jobTitle": "Full-Stack Engineer"
     },
     "findADoc": {
-      "description": "Find a Doc, Japan, is a non-profit providing free, multilingual health information to promote inclusive healthcare."
+      "description": "Find a Doc, Japan, is a non-profit providing free, multilingual health information to promote inclusive healthcare.",
+      "jobTitle": "Front-End Engineer"
     }
   },
   "card": {
     "btnViewMore": "View More",
-    "visitApp": "Visit App"
+    "visitApp": "Visit App",
+    "btnViewLess": "View Less"
   },
   "footer": {
     "madeWithLove": "Made with Love using:"
@@ -26,5 +29,9 @@
     "portfolio": "Portfolio",
     "aboutMe": "About Me",
     "contact": "Contact"
+  },
+  "aboutMe": {
+    "text": "Hi there! My name is Gustavo Minetoma. I'm a Full-Stack Engineer based in Kanagawa, Japan. I was born in Japan and moved to Brazil when I was three. My passion for tech began when I first played Tibia many years ago. I watched the gaming industry grow, especially one company: Steam. At 14, I began my career with a technical course in IT, followed by a year of mandatory service in the army. After that, I pursued a degree in System Analysis and Development at a public college. Once I graduated, I returned to Japan to become financially independent and save funds to continue my tech career. Today, I'm a Teaching Assistant at Code Chrysalis, where I share my knowledge and experience with students. My goal is to become a Full-Stack Engineer and help Brazilian developers build better lives.",
+    "header": "About Me"
   }
 }

@@ -9,15 +9,18 @@
   "portfolio": {
     "header": "Portfólio",
     "findADoc": {
-      "description": "Find a Doc, Japão, é uma organização sem fins lucrativos que fornece informações de saúde gratuitas e multilíngues para promover cuidados de saúde inclusivos."
+      "description": "Find a Doc, Japão, é uma organização sem fins lucrativos que fornece informações de saúde gratuitas e multilíngues para promover cuidados de saúde inclusivos.",
+      "jobTitle": "Engenheiro Front-End"
     },
     "vitaeAggregate": {
-      "description": "Um criador de currículos com forte foco na interação com a comunidade, projetado para apoiar o anonimato do usuário e promover feedback colaborativo."
+      "description": "Um criador de currículos com forte foco na interação com a comunidade, projetado para apoiar o anonimato do usuário e promover feedback colaborativo.",
+      "jobTitle": "Engenheiro Full Stack"
     }
   },
   "card": {
     "btnViewMore": "Ver mais",
-    "visitApp": "Visite o aplicativo"
+    "visitApp": "Visite o aplicativo",
+    "btnViewLess": "Ver menos"
   },
   "footer": {
     "madeWithLove": "Feito com amor usando:"
@@ -26,5 +29,9 @@
     "aboutMe": "Sobre mim",
     "contact": "Contato",
     "portfolio": "Portfólio"
+  },
+  "aboutMe": {
+    "header": "Sobre mim",
+    "text": "Olá! \nMeu nome é Gustavo Minetoma. \nSou Full-Stack Engineer baseado em Kanagawa, Japão. \nNasci no Japão e me mudei para o Brasil quando tinha três anos. \nMinha paixão por tecnologia começou quando joguei Tibia pela primeira vez, há muitos anos. \nObservei o crescimento da indústria de jogos, especialmente uma empresa: Steam. \nAos 14 anos, iniciei minha carreira com um curso técnico em informática, seguido de um ano de serviço obrigatório no Exército. \nDepois disso, me formei em Análise e Desenvolvimento de Sistemas em uma faculdade pública. \nDepois de me formar, voltei ao Japão para me tornar financeiramente independente e economizar fundos para continuar minha carreira tecnológica. \nHoje sou professor assistente na Code Chrysalis, onde compartilho meu conhecimento e experiência com os alunos. \nMeu objetivo é me tornar um Full-Stack Engineer e ajudar desenvolvedores brasileiros a construir vidas melhores."
   }
 }

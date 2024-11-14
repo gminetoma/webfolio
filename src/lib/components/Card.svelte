@@ -5,11 +5,14 @@
     titleFlyParams: FlyParams;
     imagePath: string;
     imageAlt: string;
-    description: string;
+    jobTitleI18nKey: string;
+    techStack: string;
+    descriptionI18nKey: string;
     descriptionFlyParams: FlyParams;
     borderColor: string;
     descriptionColor: string;
     appLink: string;
+    gitHubLink: string;
   }
 </script>
 
@@ -26,7 +29,7 @@
   let { card }: Props = $props();
 </script>
 
-<li class="flex flex-col gap-5 p-5">
+<li class="flex flex-col gap-5">
   <h3 class="text-center text-3xl" in:fly={card.titleFlyParams}>{card.title}</h3>
   <div
     class="card relative w-full overflow-hidden rounded-lg border-2 border-opacity-20 shadow-lg {card.borderColor}"
@@ -38,15 +41,31 @@
       class:h-full={isDescriptionExpanded}
       in:fly={card.descriptionFlyParams}
     >
-      <div class="z-10 flex flex-col justify-between px-5 py-7 text-white">
-        <p>{card.description}</p>
-        {#if isDescriptionExpanded}
-          <div class="flex-grow py-5" in:fly={{duration: 500, delay:125}}>
-            <h4 class="text-lg text-black font-semibold">Tech Stack</h4>
-            <p>Typescript | Nuxt 3 | Vue 3 | Pinia | Cypress</p>
-          </div>
-        {/if}
-        <div class="flex items-center gap-5 self-end absolute bottom-0 mb-7">
+      <div class="z-10 flex flex-col p-7 text-white">
+        <div class="flex flex-col gap-5">
+          {#if isDescriptionExpanded}
+            <h4 class="text-2xl" in:fly={{ duration: 500, delay: 150 }}>
+              {$i18n.t(card.jobTitleI18nKey)}
+            </h4>
+          {/if}
+          <p>{$i18n.t(card.descriptionI18nKey)}</p>
+          {#if isDescriptionExpanded}
+            <div class="flex flex-col gap-5" in:fly={{ y: 50, duration: 500, delay: 150 }}>
+              <div>
+                <h5 class="text-lg font-semibold text-black">Tech Stack</h5>
+                <p>{card.techStack}</p>
+              </div>
+              <a
+                href={card.gitHubLink}
+                target="_blank"
+                class="font-semibold text-gray-800 underline underline-offset-4"
+              >
+                GitHub
+              </a>
+            </div>
+          {/if}
+        </div>
+        <div class="absolute bottom-0 right-0 m-5 flex items-center gap-5">
           <a
             href={card.appLink}
             target="_blank"
@@ -59,7 +78,7 @@
             class="rounded-lg border px-2 py-1"
             onclick={() => (isDescriptionExpanded = isDescriptionExpanded ? false : true)}
           >
-            {$i18n.t('card.btnViewMore')}
+            {isDescriptionExpanded ? $i18n.t('card.btnViewLess') : $i18n.t('card.btnViewMore')}
           </button>
         </div>
       </div>
