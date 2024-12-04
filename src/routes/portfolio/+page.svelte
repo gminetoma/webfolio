@@ -4,7 +4,7 @@
   import { onMount } from 'svelte';
   import { isLoading } from 'svelte-i18next';
 
-  let cards: CardType[] = $state([]);
+  let cards = $state<CardType[]>([]);
 
   let isReady = $state(false);
 
@@ -51,12 +51,12 @@
 </script>
 
 <section class="flex-grow">
-  <div class="container flex flex-col gap-5 p-5">
+  <div class="container flex flex-col gap-5 px-5">
     {#if isReady && !$isLoading}
       <h2 class="text-center text-4xl">
         {$i18n.t('portfolio.header')}
       </h2>
-      <ul class="flex flex-wrap">
+      <ul class="flex flex-wrap gap-5">
         {#each cards as card}
           <Card {card} />
         {/each}

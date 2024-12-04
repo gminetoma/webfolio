@@ -6,7 +6,7 @@
   import { isLoading } from 'svelte-i18next';
   import { fade, fly } from 'svelte/transition';
 
-  let isReady = false;
+  let isReady = $state(false);
 
   onMount(() => (isReady = true));
 </script>
