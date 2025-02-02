@@ -15,7 +15,7 @@
     message: Input<{ empty: boolean }>;
   };
 
-  const { data, form } = $props();
+  const { form } = $props();
 
   let hasHitSubmit = $state(false);
   let isReady = $state(false);

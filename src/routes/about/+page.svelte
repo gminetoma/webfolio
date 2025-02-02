@@ -6,7 +6,6 @@
 
   let isReady = $state(false);
   let isModalOpen = $state(false);
-  let huskyGifRef = $state<HTMLDivElement | null>(null);
 
   onMount(() => (isReady = true));
 
@@ -24,10 +23,6 @@
       document.removeEventListener('click', handleDocumentClick);
     }
   };
-
-  $effect(() => {
-    huskyGifRef && huskyGifRef.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  });
 
   $effect(() => {
     handleDocumentEventListener();
@@ -48,7 +43,7 @@
       out:scale={{ start: 0, duration: 150 }}
     >
       <span class="text-3xl font-bold text-black">I Love Huskies !</span>
-      <div class="not-prose overflow-hidden md:rounded-md" bind:this={huskyGifRef}>
+      <div class="not-prose overflow-hidden md:rounded-md">
         <img src="/images/husky.gif" alt="Husky!" width="500px" height="600px" />
       </div>
     </div>
@@ -74,6 +69,8 @@
           <h2 class="mt-0 hidden text-center text-4xl lg:block">
             {$i18n.t('aboutMe.header')}
           </h2>
+
+          <!-- eslint-disable-next-line svelte/no-at-html-tags -->
           <p>{@html $i18n.t('aboutMe.text')}</p>
         </article>
       </div>

@@ -1,1 +1,1 @@
-export const load = ({ url }) => ({ url: url.pathname });
+export const load = ({ url }: { url: URL }) => ({ url: url.pathname });

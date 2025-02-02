@@ -12,9 +12,8 @@
   $effect(() => pageStore.set(data.url as Page));
 
   $effect(() => {
-    $isMenuHidden
-      ? document.body.classList.remove('overflow-hidden')
-      : document.body.classList.add('overflow-hidden');
+    if ($isMenuHidden) document.body.classList.remove('overflow-hidden');
+    else document.body.classList.add('overflow-hidden');
   });
 </script>
 
