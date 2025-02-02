@@ -1,8 +1,10 @@
 <script lang="ts">
+  import { applyAction, enhance } from '$app/forms';
   import MySocialIcons from '$lib/components/MySocialIcons.svelte';
   import { i18n, isLoading } from '$lib/stores/i18nStore';
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition';
+  import type { SubmitFunction } from './$types.js';
 
   type Input<Error extends Record<string, boolean>> = {
     value: string;
@@ -33,17 +35,18 @@
     }
   });
 
-  const handleSubmit = (event: SubmitEvent) => {
+  const handleSubmit: SubmitFunction = ({ cancel }) => {
     hasHitSubmit = true;
 
     const isValid = validateForm();
 
-    if (!isValid) {
-      event.preventDefault();
-      return;
-    }
+    if (!isValid) cancel();
+    else isSubmitting = true;
 
-    isSubmitting = true;
+    return async ({ result }) => {
+      isSubmitting = false;
+      applyAction(result);
+    };
   };
 
   const validateForm = () => {
@@ -95,7 +98,7 @@
           {$i18n.t('contact.header')}
         </h2>
         <MySocialIcons bgColor="transparent" fgColor="black" hasBorder={false} />
-        <form method="POST" class="flex flex-col gap-6" novalidate onsubmit={handleSubmit}>
+        <form method="POST" class="flex flex-col gap-6" use:enhance={handleSubmit} novalidate>
           <label class="relative flex flex-col">
             <span class="mb-1">
               {$i18n.t('contact.form.name')}
