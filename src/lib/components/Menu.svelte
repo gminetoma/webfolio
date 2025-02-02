@@ -1,9 +1,9 @@
 <script>
-  import SocialIcons from '@rodneylab/svelte-social-icons';
   import { i18n } from '$lib/stores/i18nStore';
   import { fly } from 'svelte/transition';
   import isMenuHidden from '$lib/stores/menuStore';
   import pageStore from '$lib/stores/pageStore';
+  import MySocialIcons from './MySocialIcons.svelte';
 
   const handleCloseMenu = () => ($isMenuHidden = true);
 </script>
@@ -46,36 +46,6 @@
         </a>
       </li>
     </ul>
-    <div class="flex flex-grow items-start justify-center gap-10">
-      <a
-        class="flex rounded-lg border border-white"
-        href="https://github.com/gminetoma"
-        target="_blank"
-      >
-        <SocialIcons
-          height="55"
-          width="55"
-          network="github"
-          fgColor="white"
-          bgColor="transparent"
-        />
-      </a>
-      <a
-        class="flex rounded-lg border border-blue-500"
-        href="https://www.linkedin.com/in/gustavommalves/"
-        target="_blank"
-      >
-        <SocialIcons
-          height="55"
-          width="55"
-          network="linkedin"
-          fgColor="white"
-          bgColor="transparent"
-        />
-      </a>
-      <a class="flex rounded-lg border border-gray-500" href="mailto:gminetoma@gmail.com">
-        <SocialIcons height="55" width="55" network="email" fgColor="white" bgColor="transparent" />
-      </a>
-    </div>
+    <MySocialIcons bgColor="transparent" fgColor="white" />
   </div>
 </section>

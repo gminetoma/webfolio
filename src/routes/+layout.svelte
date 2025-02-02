@@ -6,6 +6,7 @@
   import Footer from '$lib/components/Footer.svelte';
   import Menu from '$lib/components/Menu.svelte';
   import isMenuHidden from '$lib/stores/menuStore';
+  import { fly, scale } from 'svelte/transition';
 
   let { children, data } = $props();
 

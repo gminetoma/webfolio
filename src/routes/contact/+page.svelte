@@ -1,6 +1,8 @@
 <script lang="ts">
+  import MySocialIcons from '$lib/components/MySocialIcons.svelte';
   import { i18n, isLoading } from '$lib/stores/i18nStore';
   import { onMount } from 'svelte';
+  import { fly } from 'svelte/transition';
 
   type Input<Error extends Record<string, boolean>> = {
     value: string;
@@ -83,12 +85,16 @@
 </script>
 
 <section class="flex w-full justify-center">
-  <div class="container flex max-w-96 flex-col justify-center gap-5 px-5">
+  <div
+    class="container flex max-w-96 flex-col justify-center gap-5 px-5"
+    in:fly={{ opacity: 0, duration: 300 }}
+  >
     {#if isReady && !$isLoading}
       {#if !form}
         <h2 class="text-center text-4xl">
           {$i18n.t('contact.header')}
         </h2>
+        <MySocialIcons bgColor="transparent" fgColor="black" hasBorder={false} />
         <form method="POST" class="flex flex-col gap-6" novalidate onsubmit={handleSubmit}>
           <label class="relative flex flex-col">
             <span class="mb-1">

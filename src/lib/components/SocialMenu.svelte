@@ -1,4 +1,5 @@
 <script lang="ts">
+  import pageStore from '$lib/stores/pageStore';
   import { clickOutside } from '$lib/utils';
   import SocialIcons from '@rodneylab/svelte-social-icons';
   import { onMount } from 'svelte';
@@ -11,10 +12,11 @@
   onMount(() => (isReady = true));
 </script>
 
-{#if isReady}
+{#if isReady && $pageStore !== '/contact'}
   <div
     use:clickOutside={() => (isIconsHidden = true)}
     class="fixed bottom-0 right-0 z-10 mb-5 mr-5 flex gap-1"
+    transition:scale={{ duration: 300 }}
   >
     {#if !isIconsHidden}
       <ul class="flex gap-1">
@@ -38,10 +40,7 @@
         </li>
       </ul>
     {/if}
-    <button
-      onclick={() => (isIconsHidden = isIconsHidden ? false : true)}
-      in:scale={{ duration: 500 }}
-    >
+    <button onclick={() => (isIconsHidden = isIconsHidden ? false : true)}>
       <SocialIcons network="sharethis" fgColor="#eeeeee" />
     </button>
   </div>
