@@ -2,10 +2,7 @@
   import { fly } from 'svelte/transition';
 </script>
 
-<div
-  class="absolute top-0 h-full w-full overflow-hidden"
-  in:fly={{ opacity: 0, duration: 300 }}
->
+<div class="absolute top-0 h-full w-full overflow-hidden" in:fly={{ opacity: 0, duration: 300 }}>
   <div class="ocean">
     <div class="wave"></div>
     <div class="wave"></div>

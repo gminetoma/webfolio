@@ -1,7 +1,7 @@
 <script lang="ts">
   import SocialIcons from '@rodneylab/svelte-social-icons';
-  
-const {
+
+  const {
     fgColor,
     bgColor,
     hasBorder = true
