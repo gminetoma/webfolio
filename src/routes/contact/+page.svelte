@@ -10,7 +10,7 @@
   type FormData = {
     name: Input<{ empty: boolean }>;
     email: Input<{ empty: boolean; regex: boolean }>;
-    text: Input<{ empty: boolean }>;
+    message: Input<{ empty: boolean }>;
   };
 
   const { data, form } = $props();
@@ -26,7 +26,7 @@
     email: {
       value: ''
     },
-    text: {
+    message: {
       value: ''
     }
   });
@@ -49,11 +49,11 @@
 
     const name = formData.name.value.trim();
     const email = formData.email.value.trim();
-    const text = formData.text.value.trim();
+    const message = formData.message.value.trim();
 
     formData.name.error = undefined;
     formData.email.error = undefined;
-    formData.text.error = undefined;
+    formData.message.error = undefined;
 
     if (name.trim() === '') {
       formData.name.error = {
@@ -68,13 +68,13 @@
       };
     }
 
-    if (text.trim() === '') {
-      formData.text.error = {
+    if (message.trim() === '') {
+      formData.message.error = {
         empty: true
       };
     }
 
-    return !(formData.name.error || formData.email.error || formData.text.error);
+    return !(formData.name.error || formData.email.error || formData.message.error);
   };
 
   onMount(() => {
@@ -141,15 +141,15 @@
             <textarea
               name="message"
               id="message"
-              class={`rounded-sm shadow-md ${formData.text.error && 'border-red-400'}`}
+              class={`rounded-sm shadow-md ${formData.message.error && 'border-red-400'}`}
               rows="10"
               oninput={() => hasHitSubmit && validateForm()}
-              bind:value={formData.text.value}
+              bind:value={formData.message.value}
             ></textarea>
             <div class="relative">
-              {#if formData.text.error}
+              {#if formData.message.error}
                 <span class="absolute text-sm text-red-400">
-                  {#if formData.text.error?.empty}
+                  {#if formData.message.error?.empty}
                     {$i18n.t('form.error.required')}
                   {/if}
                 </span>

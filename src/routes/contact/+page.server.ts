@@ -24,7 +24,7 @@ const sendEmail = (formData: ContactForm, resolve: (value: boolean) => void) => 
     text: `
         Name: ${formData.name}
         Email: ${formData.email}
-        Text: ${formData.text}
+        Text: ${formData.message}
         `
   };
 

@@ -11,7 +11,6 @@
   onMount(() => (isReady = true));
 
   const handleDocumentClick = () => {
-    console.log('Hello');
     isModalOpen = false;
   };
 

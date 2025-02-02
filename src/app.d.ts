@@ -4,7 +4,7 @@ declare global {
   type ContactForm = {
     name: string;
     email: string;
-    text: string;
+    message: string;
   };
   namespace App {
     // interface Error {}
