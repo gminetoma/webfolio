@@ -1,7 +1,7 @@
 <script lang="ts">
   import { i18n, isLoading } from '$lib/stores/i18nStore';
   import { sleep } from '$lib/utils';
-  import { onMount, tick } from 'svelte';
+  import { onMount } from 'svelte';
   import { fly, scale } from 'svelte/transition';
 
   let isReady = $state(false);

@@ -1,8 +1,7 @@
 <script lang="ts">
   import SocialIcons from '@rodneylab/svelte-social-icons';
-  import { scale } from 'svelte/transition';
-
-  const {
+  
+const {
     fgColor,
     bgColor,
     hasBorder = true
